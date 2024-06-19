@@ -27,6 +27,7 @@ local function set_colors()
     DiffDelete = { bg = colors.diff_delete_bg, fg = colors.diff_delete_fg },
     DiffText = { bg = colors.diff_text },
 
+
     Type = { fg = colors.blue },
     Identifier = { fg = colors.white },
     Function = { fg = colors.white },
@@ -50,6 +51,7 @@ local function set_colors()
     Special = { fg  = colors.green },
     Character = { fg = colors.green },
 
+
     ["@keyword.import"] = { fg = colors.white },
     ["@variable"] = { fg = colors.white },
     ["@string"] = { fg = colors.green },
@@ -66,14 +68,16 @@ local function set_colors()
     ["@field"] = {fg = colors.white},
     ["@constructor"] = { link = "@punctuation.bracket" },
 
-    Pmenu = { fg = colors.white,bg = colors.bg_blue },
+
+		Pmenu = { fg = colors.white,bg = colors.bg_blue },
     PmenuSel = { fg = "NONE", bg = colors.sel_bg_blue },
     PmenuSBar = { bg = colors.bg_blue },
     PmenuThumb = { bg = colors.sel_bg_blue },
 
     lualine_b_diff_removed_normal = { fg = colors.blue },
+
+
   }
-		
   for group, highlight in pairs(highlight_groups) do
     vim.api.nvim_set_hl(0, group, highlight)
   end
