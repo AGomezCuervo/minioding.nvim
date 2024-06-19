@@ -33,7 +33,7 @@ local function set_colors()
     Function = { fg = colors.white },
     Keyword = { fg = colors.white },
     Number = { fg = colors.white },
-		Operator = { fg = colors.white },
+    Operator = { fg = colors.white },
     Statement = { fg = colors.white },
     MatchParen = { fg = colors.warning },
     EndOfBuffer = { fg = colors.gray },
