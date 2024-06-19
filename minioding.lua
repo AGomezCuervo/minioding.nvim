@@ -27,13 +27,14 @@ local function set_colors()
     DiffDelete = { bg = colors.diff_delete_bg, fg = colors.diff_delete_fg },
     DiffText = { bg = colors.diff_text },
 
-
-    Type = { fg = colors.white },
+    Type = { fg = colors.blue },
     Identifier = { fg = colors.white },
     Function = { fg = colors.white },
     Keyword = { fg = colors.white },
     Number = { fg = colors.white },
-    Operator = { fg = colors.white },
+		Operator = { fg = colors.white },
+    Constant = { fg = colors.white },
+    PreProc = { fg = colors.white },
     Statement = { fg = colors.white },
     MatchParen = { fg = colors.warning },
     EndOfBuffer = { fg = colors.gray },
@@ -46,6 +47,8 @@ local function set_colors()
     CurSearch = { fg = colors.black, bg = colors.beigue },
     DiagnosticUnnecessary = {link = "DiagnosticWarn"},
     Directory = { fg = colors.blue },
+    Special = { fg  = colors.green },
+    Character = { fg = colors.green },
 
     ["@keyword.import"] = { fg = colors.white },
     ["@variable"] = { fg = colors.white },
@@ -54,6 +57,7 @@ local function set_colors()
     ["@comment"] = { fg = colors.orange },
     ["@function"] = { fg = colors.white },
     ["@keyword.return"] = { fg = colors.blue },
+    ["@keyword.c"] = { fg = colors.blue },
     ["@type"] = { fg = colors.blue },
     ["@property"] = { fg = colors.white },
     ["@punctuation.delimiter"] = { fg = colors.white },
@@ -62,16 +66,14 @@ local function set_colors()
     ["@field"] = {fg = colors.white},
     ["@constructor"] = { link = "@punctuation.bracket" },
 
-
-		Pmenu = { fg = colors.white,bg = colors.bg_blue },
+    Pmenu = { fg = colors.white,bg = colors.bg_blue },
     PmenuSel = { fg = "NONE", bg = colors.sel_bg_blue },
     PmenuSBar = { bg = colors.bg_blue },
     PmenuThumb = { bg = colors.sel_bg_blue },
 
     lualine_b_diff_removed_normal = { fg = colors.blue },
-
-
   }
+		
   for group, highlight in pairs(highlight_groups) do
     vim.api.nvim_set_hl(0, group, highlight)
   end
