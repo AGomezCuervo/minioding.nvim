@@ -33,7 +33,7 @@ local function set_colors()
     Function = { fg = colors.white },
     Keyword = { fg = colors.white },
     Number = { fg = colors.white },
-    Operator = { fg = colors.white },
+		Operator = { fg = colors.white },
     Constant = { fg = colors.white },
     PreProc = { fg = colors.white },
     Statement = { fg = colors.white },
@@ -45,7 +45,7 @@ local function set_colors()
     CmpItemAbbr = { fg = colors.orange },
     Visual = { bg = colors.visual_bg },
     IncSearch = { link = "CurSearch" },
-    Search = { fg = colors.black, bg = colors.white },
+		Search = { fg = colors.black, bg = colors.white },
     CurSearch = { fg = colors.white, bg = colors.gray },
     DiagnosticUnnecessary = { link = "DiagnosticWarn" },
     Directory = { fg = colors.blue },
@@ -53,7 +53,7 @@ local function set_colors()
     Character = { fg = colors.green },
     Title = { fg = colors.type },
     NormalFloat = { fg = colors.white, bg = colors.black },
-
+    NonText = { fg = colors.white },
 
     ["@keyword.import"] = { fg = colors.white },
     ["@variable"] = { fg = colors.white },
@@ -74,7 +74,7 @@ local function set_colors()
     ["@constructor"] = { link = "@punctuation.bracket" },
 
 
-    Pmenu = { fg = colors.white,bg = colors.bg_blue },
+		Pmenu = { fg = colors.white,bg = colors.bg_blue },
     PmenuSel = { fg = "NONE", bg = colors.sel_bg_blue },
     PmenuSBar = { bg = colors.bg_blue },
     PmenuThumb = { bg = colors.sel_bg_blue },
